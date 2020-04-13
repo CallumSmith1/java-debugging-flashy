@@ -25,7 +25,7 @@ public class IndexController {
   public String index(Model model) {
     StringBuilder ctaBuilder = new StringBuilder();
     List<FlashCard> cards = flashCardService.getRandomFlashCards(AMOUNT_TO_SHOW);
-    ctaBuilder.append("Refresh your memory about ");
+    ctaBuilder.append("Refresh your memorY about ");
     for (FlashCard card : cards) {
       ctaBuilder.append(card.getTerm());
       if (card != cards.get(cards.size() - 1)) {
